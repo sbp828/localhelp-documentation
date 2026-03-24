@@ -1,4 +1,4 @@
-# MySQL Setup (LocalHelp App) 
+# MySQL Setup (LocalHelp App) - Dev Notes
 
 This is a simple setup guide for installing MySQL for LocalHelp app.
 
@@ -54,14 +54,6 @@ or
 
 ```bash
 mysql -u root -p
-```
-
----
-
-# 5. Create Database
-
-```sql
-CREATE DATABASE localhelp;
 ```
 
 ---
@@ -131,4 +123,3 @@ mysql -u root -p localhelp < backup.sql
 # Done
 
 MySQL is ready for LocalHelp app 🚀
-
