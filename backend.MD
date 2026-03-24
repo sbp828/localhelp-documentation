@@ -175,7 +175,7 @@ Description=LocalHelp Backend Service
 After=network.target
 
 [Service]
-User=localhelp
+User=appuser
 WorkingDirectory=/app/localhelp-backend
 ExecStart=/usr/bin/java -jar /app/localhelp-backend/target/backend.jar
 Restart=always
@@ -238,7 +238,7 @@ sudo apt install mysql-client -y
 Load schema:
 
 ```bash
-mysql -h <MYSQL-SERVER-IP> -u root -p < /app/localhelp-backend/schema.sql
+mysql -h <MYSQL-SERVER-IP> -u root -p < /app/localhelp-backend/db/init.sql
 ```
 
 ---
