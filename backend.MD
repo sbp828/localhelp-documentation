@@ -1,4 +1,4 @@
-# Backend (LocalHelp App) - Real DevOps Setup (Java Spring Boot)
+# Backend (LocalHelp App) - (Java Spring Boot)
 
 ---
 
