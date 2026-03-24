@@ -30,8 +30,11 @@ Managed by a service manager like:
 - init.d (older systems)
 
 Example:
+```
 
-👉 These are often called daemons or services: nginx, mysql, redis, Spring Boot app running as myapp.service
+👉 These are often called daemons or services: 
+nginx, mysql, redis, Spring Boot app running as myapp.service
+```
 
 2. Functional / Dedicated OS users (best practice)
 
@@ -39,7 +42,6 @@ Applications should NOT run as root
 Instead, they run under a special user account created for that app
 
 Example:
-bash
 ```
 These are called service accounts / functional users: 
 
