@@ -25,42 +25,37 @@ Apps run as long-running background processes
 
 Managed by a service manager like:
 
-systemd (Linux modern standard)
+- systemd (Linux modern standard)
 
-init.d (older systems)
+- init.d (older systems)
 
 Example:
 
-nginx, 
-
-mysql, 
-
-redis,
-
-Spring Boot app running as myapp.service
-
-👉 These are often called daemons or services
+👉 These are often called daemons or services: nginx, mysql, redis, Spring Boot app running as myapp.service
 
 2. Functional / Dedicated OS users (best practice)
+
 Applications should NOT run as root
 Instead, they run under a special user account created for that app
 
 Example:
+bash
+```
+These are called service accounts / functional users: 
 
 mysql user → runs MySQL
 nginx user → runs Nginx
 appuser, springboot, nodeapp → custom app users
-
-👉 These are called service accounts / functional users
-
+```
 3. Combination (real-world standard)
 
 Most production setups use BOTH:
-
+bash
+```
 ✔ systemd service starts the app
 ✔ app runs as a restricted functional user
 ✔ that user has limited permissions (security boundary)
-
+```
 # 2. Server Setup (Pre-requisites)
 
 Install required packages:
