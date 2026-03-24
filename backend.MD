@@ -22,11 +22,21 @@ On servers, applications typically run in one of these ways:
 
 1. Daemon / Service processes (most common for backend apps)
 Apps run as long-running background processes
+
 Managed by a service manager like:
+
 systemd (Linux modern standard)
+
 init.d (older systems)
+
 Example:
-nginx, mysql, redis
+
+nginx, 
+
+mysql, 
+
+redis,
+
 Spring Boot app running as myapp.service
 
 👉 These are often called daemons or services
