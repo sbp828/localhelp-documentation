@@ -37,7 +37,7 @@ git clone https://github.com/sbp828/localhelp-frontend
 
 Create Nginx Reverse Proxy Configuration.
 ```
-vim /etc/nginx/default.d/expense.conf
+vim /etc/nginx/default.d/localhelp.conf
 ```
 Add the following content
 ```
